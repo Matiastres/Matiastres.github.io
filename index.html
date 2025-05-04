@@ -17,13 +17,28 @@
 
   <!-- Estilos -->
   <style>
-    :root {
-  --color-bg: #ffffff;
-  --color-accent: #cfd8dc;
-  --color-text: #222222;
-  --color-bar: #cfd8dc;
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #8b0000; /* Rojo institucional */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.topbar-space {
+  height: 60px; /* para que el contenido no se oculte debajo de la barra fija */
 }
     body {
+      <div class="topbar">Flach Medical</div>
+<div class="topbar-space"></div>
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #f4fdfc; /* fondo suave relacionado con salud */
