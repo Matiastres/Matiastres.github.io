@@ -20,25 +20,24 @@
   body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #5C80BC;
+    background-color: #FFFFFF;
     color: #000000; /* letras negras */
   }
 
   .topbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #5C80BC;
-    color: 	#000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    font-size: 1.5em;
-    font-weight: bold;
-    z-index: 1000;
-  }
-
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #247BA0; /* color específico de la barra */
+  color: #ffffff; /* texto blanco en la barra */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  z-index: 1000;
+}
   .topbar-space {
     height: 60px;
   }
@@ -102,6 +101,9 @@
 </style>
 </head>
 <body>
+  <div class="topbar">FLACH Medical</div>
+<div class="topbar-space"></div> <!-- separa para que no tape contenido -->
+
   <div class="highlight">Flach Medical</div>      
   <header>
     <img src="image2.png" alt="Ambulancia FLACH Medical" class="hero-image" />
