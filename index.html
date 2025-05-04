@@ -1,75 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <script>
-  var ahrefs_analytics_script = document.createElement('script');
-  ahrefs_analytics_script.async = true;
-  ahrefs_analytics_script.src = 'https://analytics.ahrefs.com/analytics.js';
-  ahrefs_analytics_script.setAttribute('data-key', 'lAibHDHvGTsxGDa7mT4Y8Q');
-  document.getElementsByTagName('head')[0].appendChild(ahrefs_analytics_script);
-</script>
-  <script src="https://analytics.ahrefs.com/analytics.js" data-key="lAibHDHvGTsxGDa7mT4Y8Q" async></script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CD81RPTTKZ');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FLACH Medical</title>
+
+  <!-- Scripts de análisis -->
+  <script async src="https://analytics.ahrefs.com/analytics.js" data-key="lAibHDHvGTsxGDa7mT4Y8Q"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CD81RPTTKZ');
+  </script>
+
+  <!-- Estilos -->
   <style>
+    :root {
+      --color-bg: #f8f9fa;
+      --color-accent: #d1e3ea;
+      --color-text: #333;
+      --color-bar: #cfe6f3;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f8f9fa;
-      color: #333;
+      background-color: var(--color-bg);
+      color: var(--color-text);
     }
+
+    .topbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--color-bar);
+      color: var(--color-text);
+      padding: 10px 0;
+      text-align: center;
+      font-size: 1.5em;
+      font-family: 'Georgia', serif;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    .topbar-space {
+      height: 60px;
+    }
+
     header {
       width: 100%;
     }
+
     .hero-image {
       width: 100%;
       height: 300px;
       object-fit: cover;
     }
+
     .container {
       padding: 20px;
       max-width: 1000px;
       margin: auto;
     }
+
     .highlight {
       font-size: 1.8em;
       font-weight: bold;
       text-align: center;
       margin-top: 20px;
     }
+
     .description {
       text-align: justify;
       font-size: 1.1em;
       margin: 20px 0;
     }
-    .certifications {
-      background-color: #e9ecef;
+
+    .box {
+      background-color: var(--color-accent);
       padding: 20px;
       border-radius: 8px;
       margin: 20px 0;
     }
-    .contact {
-      background-color: #dee2e6;
-      padding: 20px;
-      border-radius: 8px;
-    }
+
     ul {
-      list-style-type: none;
+      list-style: none;
       padding-left: 0;
+    }
+
+    a {
+      color: inherit;
     }
   </style>
 </head>
+
 <body>
+  <div class="topbar">FLACH MEDICAL</div>
+  <div class="topbar-space"></div>
+
   <header>
     <img src="image2.png" alt="Ambulancia FLACH Medical" class="hero-image" />
   </header>
@@ -78,11 +109,12 @@
     <div class="highlight">FLACH Medical Ambulance Assistance</div>
 
     <div class="description">
-  Somos una empresa chilena dedicada al arriendo de ambulancias para eventos y traslados programados. <br />
-  Aunque contamos con una sola unidad, operamos con personal certificado y equipamiento al día, asegurando un servicio confiable, profesional y humano. <br /><br />
-  FLACH Medical se especializa en brindar cobertura médica prehospitalaria en eventos deportivos, corporativos y sociales, cumpliendo con los protocolos exigidos por la autoridad sanitaria. Nuestra operación se caracteriza por la puntualidad, el compromiso y la empatía con cada paciente y cliente.
-</div>
-    <div class="certifications">
+      Somos una empresa chilena dedicada al arriendo de ambulancias para eventos y traslados programados. <br />
+      Aunque contamos con una sola unidad, operamos con personal certificado y equipamiento al día, asegurando un servicio confiable, profesional y humano. <br /><br />
+      FLACH Medical se especializa en brindar cobertura médica prehospitalaria en eventos deportivos, corporativos y sociales, cumpliendo con los protocolos exigidos por la autoridad sanitaria. Nuestra operación se caracteriza por la puntualidad, el compromiso y la empatía con cada paciente y cliente.
+    </div>
+
+    <div class="box">
       <h3>Certificaciones</h3>
       <ul>
         <li>- Ambulancia tipo A1, equipada para soporte vital básico.</li>
@@ -91,22 +123,23 @@
       </ul>
     </div>
 
-    <div class="contact">
+    <div class="box">
       <h3>Contacto</h3>
       <ul>
-        <li>📞  Teléfono: +56 9 22490918</li>
-        <li>📧  Correo: ambu.flash.medical@gmail.com</li>
-        <li>📍   Región Metropolitana, Santiago</li>
+        <li>📞 Teléfono: +56 9 22490918</li>
+        <li>📧 Correo: ambu.flash.medical@gmail.com</li>
+        <li>📍 Región Metropolitana, Santiago</li>
         <li>💬 <a href="https://wa.me/56922490918" target="_blank">WhatsApp directo</a></li>
       </ul>
     </div>
-    <div class="contact">
-  <h3>Video de Presentación</h3>
-  <video width="100%" height="200" controls style="border-radius: 8px;">
-    <source src="video-ambulancia.mp4" type="video/mp4">
-    Tu navegador no soporta la reproducción de video.
-  </video>
-</div>
+
+    <div class="box">
+      <h3>Video de Presentación</h3>
+      <video width="100%" height="200" controls style="border-radius: 8px;">
+        <source src="video-ambulancia.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </div>
+  </div>
 </body>
 </html>
-
