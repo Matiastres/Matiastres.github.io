@@ -31,23 +31,33 @@
     }
 
     .topbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: var(--color-bar);
-      color: var(--color-text);
-      padding: 10px 0;
-      text-align: center;
-      font-size: 1.5em;
-      font-family: 'Georgia', serif;
-      font-weight: bold;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      z-index: 1000;
-    }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #e0f7fa; /* Color pastel relacionado con la salud */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
 
-    .topbar-space {
-      height: 60px;
-    }
+.topbar-text {
+  color: #00796b; /* Color oscuro pastel para el texto */
+}
+
+.topbar-icon {
+  height: 24px;
+  width: auto;
+}
+
+.topbar-space {
+  height: 60px; /* Altura igual a la de la barra superior para evitar que el contenido se oculte detrás */
+}
 
     header {
       width: 100%;
